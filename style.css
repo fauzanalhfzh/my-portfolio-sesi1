@@ -1,0 +1,100 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* NAVBAR START */
+header {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 48px;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+li a {
+    position: relative;
+    color: white;
+    font-weight: 300;
+}
+
+.visit-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-wrap: nowrap;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 48px;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.visit-btn:hover {
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+    transform: scale(1.03);
+}
+/* NAVBAR END */
+
+/* TEXT HOVER START */
+.text-hover {
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: transparent;
+    text-shadow: 10px 10px 0px #165954,
+    15px 15px 0px #f9ac66,
+    20px 20px 0px #ed6b5b,
+    45px 45px 10px #252525;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-text-stroke: 6px #252525;
+}
+
+.text-hover:hover {
+    font-variation-settings: 'wght', 100, 'ital' o;
+    text-shadow: none;
+}
+/* TEXT HOVER END */
